@@ -27,6 +27,17 @@ app.use(express.json())
   * 
   */
 
+  /**
+   *  SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+   *  NoSQL: MongoDB, CouchDB, etc
+   */
+
+  /**
+   * Driver: SELECT * from users
+   * Query builder: table('users').select('*').where() 
+   */
+
+
 app.post('/users/', (request, response) =>{
     const body = request.body;
     console.log(body);
