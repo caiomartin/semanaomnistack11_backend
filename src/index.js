@@ -1,12 +1,12 @@
 const express = require('express');
-const rotes = require('./rotes');
+const routes = require('./routes');
 
 const app = express();
 
 
 app.use(express.json())
 
-app.use(rotes);
+app.use(routes);
 
 /**
  * Rota / Recurso
